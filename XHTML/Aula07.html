@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>XHTML Aula07</title>
+	</head>
+	
+	<body style="background-color:lightgrey;">
+	
+		<h1 style="text-align:center; color:orange;">
+		Imagens - Aulas 07 - Edição de Imagens
+		</h1>
+		
+		<h2 style="text-align:center; color:#FF0000;">
+		Editar Imagens
+		</h2>
+		
+		<p style="text-align:justify; color:purple;">
+		
+		Como apresentado anteriormente, temos diversos editores de imagens. Essencialmente, como programadores, devemos editar as imagens de modo que fiquem mais leves, tornando a página mais rápida. Podemos utilizar o Photoshop ou os programas gratuitos abaixo ou, até mesmo, o Paitbrush. <br />
+		<br />
+		- GIMP - www.gimp.org <br />
+		- PICASA - picasa.google.com <br />
+		- IMAGEMAGICK - www.imagemagick.org <br />
+		<br />
+		Quando estamos criando uma página, é importante pensar na melhor forma de economizar dados, sendo com imagens mais leves ou códigos mais enxutos. Isso dá uma maior velocidade de carregamento às páginas. Tratando-se de imagens, devemos pensar na relação entre o tamanho e a qualidade da imagem, bem como a finalidade da página.
+		Se não estamos trabalhando com páginas que requeiram conteúdos gráficos com alta qualidade, podemos utilizar o Paitbrush para diminuir as imagens, alterar a qualidade, tipo de imagem (GIF, JPG, etc.). <br />
+		<br />
+		Caso tenhamos uma imagem que esteja em "níveis" superiores da pasta onde está o arquivo XHTML da página, podemos utilizar "../" antes do nome da imagem. Por exemplo: "../../img/tigre1pequeno.gif". Isso indica que a pasta IMG está dois níveis acima da pasta que contém os arquivos XHTML que estão sendo executados. <br />		
+		Abaixo, temos um exemplo de imagem que foi "puxada" de outra pasta. <br />
+		</p>
+		
+		<p>
+		<br />
+		<img src="../img_teste/tigre1.gif" style="width:50%" alt="Tigre GIF em outra pasta no nível superior" />
+		<br />
+		</p>
+		<p>
+		Também podemos puxar imagens de sites. Basta incluir o endereço da imagem. Utilizaremos o endereço abaixo: <br />
+		 - http://www.imagenstop.blog.br/wp-content/gallery/imagens-de-lobos/Desenhos-lobos.jpg <br />
+		</p>
+		<p>
+		<br />
+		<img src="http://www.imagenstop.blog.br/wp-content/gallery/imagens-de-lobos/Desenhos-lobos.jpg" style="width:50%" align="left" alt="Tigre GIF em outra pasta no nível superior" />
+		<br />
+		</p>
+		
+	</body>
+</html>

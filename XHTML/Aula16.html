@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>XHTML Aula 16</title>
+	</head>
+	<body style="background-color:orange;">
+		<h1 style="text-align:center; font-family:arial; color:yellow;">TABELAS - TABLE, TR e TD - INTRODUÇÃO</h1>
+		<p>
+		Podemos criar tabelas dentro da página. Como explicado na aula anterior, as tabelas devem ser utilizadas, apenas, para listar algo, itens.<br />
+		Para cada linha da tabela, utilizamos a Tag TR - Table Row. Para cada coluna, a Tag TD - Table Data.<br />
+		Abaixo, podemos ver o esqueleto de uma tabela com quatro linhas e duas colunas (substitua os pontos por Tags):<br />
+		<pre>
+		.table border border="1" cellpadding="10" (indica o espaço entre o conteúdo e a borda da célula) cellspacing="0" (indica o espaço entre as células).
+			.tr..td.TREINAMENTO./td..td.INSTRUTOR./td../tr.
+			.tr..td.Scrum./td..td.Aman./td../tr.
+			.tr..td.Lumis./td..td.Josadache./td../tr.
+			.tr..td.HTML./td..td.Esaú./td../tr.
+		./table.
+		</pre>
+		</p>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr><td>TREINAMENTO</td><td>INSTRUTOR</td></tr>
+			<tr><td>Scrum</td><td>Aman</td></tr>
+			<tr><td>Lumis</td><td>Josadache</td></tr>
+			<tr><td>HTML</td><td>Esaú</td></tr>
+		</table>
+		<p>
+		Ainda temos atributos que podemos utilizar dentro da TD. Dentro da Tag TD, podemos utilizar o atributo align="right" (left, center, justify).<br />
+		Podemos formatar vários estilos, como cor do fundo, cor da fonte, etc..
+		</p>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr><td style="background-color:grey;">TREINAMENTO</td><td style="background-color:blue;">INSTRUTOR</td></tr>
+			<tr><td align="right" style="background-color:yellow;">Scrum</td><td align="right" style="background-color:green;">Aman</td></tr>
+			<tr><td align="left" style="background-color:purple;">Lumis</td><td align="left" style="background-color:red;">Josadache</td></tr>
+			<tr><td align="center" style="background-color:lightgreen;">HTML</td><td align="center" style="background-color:lightblue;">Esaú</td></tr>
+		</table>
+	</body>
+</html>

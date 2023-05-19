@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Aula 17 - Menu</title>
+		<style type="text/css">
+			ul#menu > li {
+				float:left;
+			}
+			ul#menu > li > ul{
+				left:0;
+				top:25px;
+			}
+			ul{
+				padding:0;
+				margin:0;
+				list-style:none;
+			}
+			li{
+				border:1px solid #000;
+				width:120px;
+				padding:3px;
+				position:relative;
+			}
+			li:hover{
+				background-color:#000;
+				color:white;
+			}
+			/*submenu*/
+			li > ul{
+				position:absolute;
+				left:126px;
+				top:-1px;
+				color:#000;
+			}
+		</style>
+		<script type="text/javascript" src="JavaScript/jquery.js"></script> <!-- Biblioteca JQuery do JavaSript -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#menu li ul").hide();
+				$("#menu li").hover(
+					function(){$ (this).children("ul").show();},
+					function(){$ (this).children("ul").hide();}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Menu Drop Down com JQuery</h1>
+		<p>
+			<span style="font-family:arial; color:#EE0000; font-weight:bold;" >OBSERVAÇÃO IMPORTANTE:</span> Quando estamos programando, é melhor montarmos nossa folha de estilos direto no cabeçalho do arquivo XHTML. Com isso, ganhamos agilidade, bem como o próprio browser lê mais rápido sua págiina. Após estar tudo OK, cortamos o estilo e inserimos em um arquivo CSS.<br />
+			</p>
+			<p>
+			Para a construção de menus padrão Web, Horizontais, Verticais ou Sobmenus, utilizamos as listas. Normalmente, utiliza-se a tag "ul", porém, outros tipos de listas, como "ol", podem ser utilizadas.<br />
+			Por vezes, alguns programadores inserem as "ul" dentro de alguma "div". Essa prática não é necessária, pois o intuito do programador é deixar o código o mais limpo possível. Uma "ul" é, em si mesma, um elemento em bloco, portanto, não há a necessidade de inserí-lo em uma "div". Nas primeiras aulas de XHTML, aprendemos que não é recomendável inserir elementos em bloco dentro de outros elementos em bloco.<br />
+			Para conseguirmos dar o efeito necessário ao menu, utilizamos JavaScript. A biblioteca JQuery é a mais utilizada para esse tipo de efeito.<br />
+			Fazer download do JQuery no site <a href="https://jquery.com/download/" target="blank">jquery.com/download</a>
+		</p>
+		<ul id="menu">
+			<li>Home</li>
+			<li>Soluções</li>
+			<li>Indústrias
+				<ul>
+					<li>Financeira</li>
+					<li>Comunicação</li>
+					<li>Educação</li>
+					<li>Energia
+						<ul>
+							<li>Elétrica</li>
+							<li>Eólica</li>
+							<li>Hidráulica</li>
+							<li>Fóssil</li>
+							<li>Solar</li>
+							<li>Atômica</li>
+						</ul>
+					</li>
+					<li>Governo</li>
+				</ul>
+			</li>
+			<li>Cases</li>
+			<li>Contato</li>
+		</ul>
+
+	</body>
+</html>

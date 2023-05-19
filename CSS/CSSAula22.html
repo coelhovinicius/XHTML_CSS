@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Aula 22</title>
+		<!--<style type="text/css">
+			@import url("css/CSSEstiloAula22.css") screen, projection;
+		</style>-->
+		<link rel="stylesheet" type="text/css" href="css/CSSEstiloAula22.css" media="all" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Layout - Estruturação</h1>
+			</div>
+			<div id="left"></div>
+			<div id="content">
+				<h2>Introdução</h2>
+				<p>
+					Nas aulas anteriores, aprendemos que as "div" são utilizadas para estruturar os grandes blocos de informações a serem inseridas em uma página.<br />
+					O ideal é estruturar o layout de maneira que contenha todas as áreas necessárias. Abaixo, vemos um exemplo de sintaxe para estruturação de uma página básica:
+				</p>
+				<pre>
+&ltdiv id="container"&gt
+	&ltdiv id="header"&gt&lt/div&gt
+	&ltdiv id="left"&gt&lt/div&gt
+	&ltdiv id="content"&gt&lt/div&gt
+	&ltdiv id="right"&gt&lt/div&gt
+	&ltdiv id="footer"&gt&lt/div&gt
+&lt/div&gt
+				</pre>
+				<p>
+					Como vemos, uma estrutura básica compõe-se das "áreas" Cabeçalho, Esquerda, Centro, Direita e Rodapé. Devemos utilizar as IDs da melhor maneira possível, para que a página seja de fácil manutenção.<br />
+					No exemplo de estruturação abaixo, estamos definindo IDs "genéricas", porém, ao se desenvolver uma página, devemos utilizar IDs mais específicas.<br />
+					Por exemplo, se temos uma página com diversas "divisões". Podemos, para cada divisão da página, desenvolver DIVs que contenham, cada uma, seus elementos Cabeçalho, Esquerda, Centro, Direita e Rodapé. Assim, devemos nomear cada um desses itens diferentemente. Por exemplo, "MenuHeader", "AdsMenu", "MainMenu", "MainContent", etc.. Sempre devemos definir se iremos utilizar nomenclaturas em inglês ou português. O mais indicado, obviamente, é utilizar o inglês.<br />
+					Abaixo, exemplos de estruturação:
+				</p>
+				<img src="img/exemplo1.png" alt="exemplo1"><br />
+				<img src="img/exemplo2.png" alt="exemplo2">
+				<p>
+					Os Layouts podem ser classificados segundo dois critérios:<br />
+					Número de colunas, onde muitos sites têm colunas "padrão", onde são inseridos os dados; e<br />
+					Largura da Página, que pode ser Fixa, onde a largura não varia com o tamanho da janela do browser; Líquida, que são larguras que variam em relação ao tamanho do browser, usando percentagens; e larguras Elásticas, que define a largura em relação ao tamanho de fonte, por exemplo.<br />
+					Podemos utilizar uma largura Fixa, com a vantagem de se ter restrito controle de como as informações serão exibidas em quaisquer tamanhos de janelas, poré, a desvantagem é que aparecerão as barras de rolagem para conseguir ler a página em uma janela pequena, por exemplo, além do mau aproveitamento da área disponível horizontalmente se a janela do browser for muito grande, por exemplo.<br />
+					Veja abaixo a sintaxe em:
+				</p>
+				<pre>
+#container{
+	border:1px solid black;
+	width:500px;
+}
+				</pre>
+				<p>
+					Com a largura Líquida, podemos definir percentuais nos quais as estruturas da página serão exibidas na tela. Utilizamos "width:80%;". Podemos definir, também, uma largura mínima para um layout.<br />
+					Abaixo, vemos outro exemplo de sintaxe:
+				</p>
+				<pre>
+#container{
+	border:1px solid black;
+	width:/*500px*/80%;
+	min-width:300px;	
+}
+				</pre>
+				<p>
+					Com o layout Elástico, conseguimos definir a largura com base no tamanho da fonte adotada, por exemplo.
+				</p>
+				<pre>
+*{
+	font-size:12px;
+}
+#container{
+	border:1px solid black;
+	width:30em;
+}
+				</pre>
+				<h3>Centralização do Layout</h3>
+				<p>
+					Podemos definir margens através da propriedade "margin". Para centralizarmos uma página, utilizamos o comando "auto" para os lados direito e esquerdo na atribuição da "margin".
+				</p>
+				<pre>
+#container{
+	border:1px solid black;
+	width:90%;
+
+	margin:0px auto; - "0px" para cima e para baixo e "auto" para os lados direito e esquerdo
+}
+				</pre>
+			</div>
+			<div id="right"></div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>

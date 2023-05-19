@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>XHTML Aula 18</title>
+	</head>
+	<body style="background-color:#E0EEEE;">
+		<h1 align="center" style="font-family:arial; color:grey;">FORMULÁRIOS</h1>
+		<p style="font-family:arial; color:grey;">
+		Formulários estão presentes em diversas páginas da web. Por exemplo, quando você preenche login e senha para acessar seu banco, você está preenchendo um formulário.<br />
+		Para fazer um formulário, utilizamos a Tag "form", que deverá conter toda a estrutura do formulário. Cada campo do formulário é um "controle" do formulário.<br />
+		A Tag Form possui dois atributos importante: ACTION e METHOD.<br />
+		ACTION informa para onde será submetido os dados do formulário, um servidor, por exemplo.<br />
+		METHOD indica a maneira que as informações serão enviadas ao servidor. Temos o método POST, que é mais seguro, pois não "abre" as informações que estão sendo enviadas, e o método GET, que permite que as informações enviadas sejam vizualizadas.<br />
+		</p>
+		<form action="aula18.html" method="get">
+			Nome: <input type="text" id="nome" /><br />
+			Senha: <input type="password" id="senha" /><br />
+			<br />
+			Sexo - RADIO button:<br />
+			<input type="radio" name="sexo" value="M" />Masculino<br />
+			<input type="radio" name="sexo" value="F" />Feminino<br />
+			<br />
+			Conhecimentos = CHECKBOX:<br />
+			<input type="checkbox" name="conhecimentos" value="java" />JAVA<br />
+			<input type="checkbox" name="conhecimentos" value="html" />HTML<br />
+			<input type="checkbox" name="conhecimentos" value="css" />CSS<br />
+			<input type="checkbox" name="conhecimentos" value="xslt" />XSTL<br />
+			<br />
+			Incluir arquivo. Por exemplo, incluir Curriculo:<br />
+			<input type="file" id="curriculo" /><br />
+			<br />
+			Botão Enviar Dados - Submete os dados ao servidor/arquivo indicado em "action":
+			<input type="submit" value="Enviar"><br /><!--Submete os dados para o servidor indicado no "action"-->
+			Botão Limpar - Limpa os dados do formulário:
+			<input type="reset" value="Limpar"><br /><!--Limpa os dados do formulário-->
+			Botão tipo Button - Permite que seja atribuída qualquer instrução que, ao clicar o botão, será efetuada:
+			<input type="button" value="Validar Formulário"><br /><!--Permite que coloquemos qualquer instrução para o botão-->
+			<br />
+			Seleção - SELECT - Permite selecionar dados, por exemplo, País:<br />
+			<select id="pais">
+				<option value="BRA">Brasil</option>
+				<option value="HOL">Holanda</option>
+				<option value="EUA">Estados Unidos</option>
+				<option value="FRA">França</option>
+				<option value="ESP">Espanha</option>
+				<option value="ARG">Argentina</option>
+				</select><br />
+			<br />
+			Atribuem-se VALUES, que são os códigos para os campos selecionados.<br />
+			Também podemos criar grupos de SELECTs, utilizando o OPTGROUP, como abaixo:<br />
+			Editores ou Navegadores<br />
+			<select id="en">
+				<optgroup label="Editores">
+					<option>Notepad++</option>
+					<option>DreamWeaver</option>
+					<option>Eclipse</option>
+					<option>HTML-Kit</option>
+				</optgroup>
+				<optgroup label="Navegadores">
+					<option>Mozilla Firefox</option>
+					<option>Internet Explorer</option>
+					<option>Google Chrome</option>
+					<option>Opera</option>
+				</optgroup>
+			</select><br />
+			<br />
+			Elemento TEXTAREA - Uma área determinada em que podemos inserir dados a serem submetidos.<br />
+			<textarea cols="40" rows="10">Escreva um resumo</textarea>
+			<br />
+		</form>
+	</body>
+</html>

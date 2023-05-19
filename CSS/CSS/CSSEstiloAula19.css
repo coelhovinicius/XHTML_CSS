@@ -1,0 +1,31 @@
+h1, h2, p, pre{
+	border:1px solid black;
+	/*width:200px;
+	float:left;*/
+}
+p{
+	background-color:#DDDDDD;
+}
+/*span{
+	border:1px solid black;
+	
+	position:relative;
+	left:6px;
+	top:6px;
+}*/
+span.destaque{
+	width:40%;
+	float:right;
+	border:1px solid black;
+}
+#float{
+	clear:both;
+	/*float:left;*/
+}
+/*li{
+	float:left;
+	width:90px;
+}*/
+img{
+	float:right;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 08</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula8.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>BOX MODEL</h1>
+		<div>
+			<p>
+				O Box Model nos possibilita determinar a maneira como os elementos são exibidos e pode determinar a maneira como esses elementos interagem entre si dentro de cada elemento em bloco da página a ser desenvolvida. Podemos customizar o "body", as "div", os "p", os "h1", "h2", etc..<br />
+				Cada Box Model possui os elementos Margem, Borda, Preenchimento e Conteúdo, onde podemos customizar da maneira necessária. Podemos, por exemplo, mudar o tamanho, cor, layout desses elementos.<br />
+				Para vizualização dos códigos do site, podemos utilizar, no Firefox, a ferramenta chamada Firebug.<br />
+			</p>
+			<h2>EXEMPLO - Customização de Margem</h2>
+			<pre>
+				p{
+					margin-top:1px;
+					margin-right:50px;
+					margin-bottom:50px;
+					margin-left:20px;
+				}
+			</pre>
+			<h2>SIMPLIFICAÇÃO</h2>
+			<p>
+				Podemos simplificar o código para a customização das medidas da Margem. Para isso, devemos seguir a ordem de lados Topo, Direita, Baixo e Esquerda.
+			</p>
+			<pre>
+				p{
+					margin:1px 50px 50px 20px;
+				}
+			</pre>
+			<p>
+				Ainda, podemos simplificar mais. Quando atribuímos apenas um valor, este é aplicado a todos os lados:
+			</p>
+			<pre>
+				p{
+					margin:1px;
+				}
+				
+				OU
+				
+				p{
+					margin:1px 2px;
+				}
+				
+				OU AINDA
+				
+				p{
+					margin:1px 2px 3px;
+				}
+			</pre>
+			<h2>PADDING - Preenchimento</h2>
+			<p>
+				Para customizarmos a área do PREENCHIMENTO, utilizamos códigos semelhantes aos de cima, mudando "margin" para "padding", como visto abaixo:
+			</p>
+			<pre>
+				div{
+					padding:2px 5px;
+				}
+			</pre>
+			<h2>BORDA</h2>
+			<p>
+				A propriedade Border é um pouco mais complexa. Para customização dessa propriedade, podemos alterar os elementos Largura, Cor e Estilo de borda.<br />
+				Como com os exemplos acima, há diversas maneiras de determinar o layout das bordas. Podemos alterar a largura e cor	de todas as bordas de uma vez, ou podemos alterar cada lado da borda que queremos aplicar a alteração.				
+			</p>
+			<pre>
+				p{
+					border-top-width:5px;
+					border-right-width:10px;
+					border-bottom-width:5px;
+					border-left-width:10px;
+					border-top-color:red;
+					border-right-color:blue;
+					border-bottom-color:green;
+					border-left-color:yellow;
+				}
+				
+				OU
+				
+				p{
+					border-width:5px 10px 5px 10px;
+					border-color:red blue green yellow;
+				}
+				
+				OU
+				
+				p{
+					border-width:5px;
+					border-color:red;
+				}
+				
+				OU
+				
+				p{
+					border-width:5px 10px;
+					border-color:green yellow;
+				}
+				
+				OU
+				
+				p{
+					border-width:5px 10px 20px;
+					border-color:blue yellow green;
+				}
+			</pre>
+			<h3>Estilos de Bordas</h3>
+			<p>
+				Há diversos estilos de bordas que podem ser aplicados ao layout da página. Bordas sólidas, pontilhadas, tracejadas, em alto-relevo, etc..
+			</p>
+			<pre>
+				div{
+					border-top-style:solid; - borda sólida
+					border-right-style:dotted; - borda pontilhada
+					border-bottom-style:ridge; - borda em alto-relevo
+					border-left-style:dashed; - borda tracejada
+					border-style:double; - borda dupla;
+					border-style:inset; - borda "para baixo"
+					border-style:outset; - borda "para cima"
+				}
+			</pre>
+			<p>
+				Ainda, podemos simplificar a sintaxe das bordas, como abaixo:
+			</p>
+			<pre>
+				div{
+					border:5px dashed purple; - assim, todos os lados receberão as mesmas características
+				}
+			</pre>
+			<p>
+				Para maiores informações, é só buscar na Internet. Três exemplos são o site da Maujor: <a href="http://www.maujor.com/tutorial/bordertut.php" target="blank">www.maujor.com/tutorial/bordertut.php</a>; o site da Disign Shack: <a href="https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/" target="blank">https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/</a>; e o site da UDEMY: <a href="https://www.udemy.com/html-and-css-for-beginners-crash-course-learn-fast-easy/" target="blank">https://www.udemy.com/html-and-css-for-beginners-crash-course-learn-fast-easy/</a>.
+			</p>
+		</div>
+	</body>
+</html>

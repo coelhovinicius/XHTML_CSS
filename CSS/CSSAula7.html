@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 07</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula7.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>EFEITO CASCATA E HERANÇA</h1>
+		<div>
+			<p>
+				Em qualquer folha de estilo, por mais simples que seja, há a possibilidade de que duas ou mais regras selecionem o mesmo elemento. O Efeito Cascata pode solucionar esse tipo de problema.<br />
+				Quando há duas regras para um mesmo elemento, os browsers atribuem uma ordem de relevância para customizar a página, independente da ordem em que foram escritos os códigos CSS nas folhas de estilo. Por exemplo, uma customização "d > p {}" sobressai sobre a customização "p {}". O cálculo do que é mais importante se dá no Efeito Cascata.<br />
+				Originalmente, há três fontes distintas de folhas de estilo:
+				<ul>
+					<li>Folhas de Estilo do Autor: Folha de estilo utilizada pelo autor da página, para aplicar à mesma;</li>
+					<li>Folhas de Estilo do Usuário: O usuário pode criar sua própria folha de estilo e vincular ao browser. Há diversas maneiras que o usuário pode utilizar para aplicar folhas de estilo. Cada browser possui sua maneira;</li>
+					<li>Folhas de Estilo do Browser: É a configuração "padrão" do browser.</li>
+				</ul>
+			</p>
+			<h2>Efeito Cascata</h2>			
+			<p>
+				O Efeito Cascata organiza a ordem de aplicação das folhas de estilo, atribuindo importâncias para cada regra. <br />
+				A ordem padrão, da menos importante para a mais importante, é:
+				<ol>
+					<li>Folha "padrão" do Navegador - MENOS IMPORTANTE;</li>
+					<li>Folha do Usuário;</li>
+					<li>Folha do autor, que pode ser: a) Estilo Externo (@import) - menos importante; b) Estilo Incorporado (head); c) Estilo Inline - mais importante;</li>
+					<li>Marcação !important do Usuário;</li>
+					<li>Marcação !important do Autor - MAIS IMPORTANTE.</li>
+					
+				</ol>
+			</p>
+			<h2>Cálculo da Especificidade</h2>
+			<p>
+				A Especificidade é definida através de quatro níveis:
+				<ol type="a">
+					<li>Inline;</li>
+					<li>IDs;</li>
+					<li>Classes, pseudoclasses, atributos;</li>
+					<li>Elementos e Pseudo-Elementos.</li>
+				</ol>
+				Calcula-se como visto abaixo:
+				<ul>
+					<li>p {}		0,0,0,1		Nível de Especificidade: 1 - Um Elemento "p"</li>
+					<li>div p {}	0,0,0,2		Nível de Especificidade: 2 - Um Elemento "div" e um Elemento "p"</li>
+					<li>p.intro {}	0,0,1,1		Nível de Especificidade: 11 - Um Classe "intro" e um Elemento "p"</li>
+					<li>#menu {}	0,1,0,0		Nível de Especificidade: 100 - Um ID "menu"</li>
+					<li>style="xxx"	1,0,0,0		Nível de Especificidade: 1000 - Um estilo Inline</li>
+				</ul>
+			</p>
+		<h2>Herança</h2>
+		<p>
+			Quando temos vários elementos dentro de uma mesma tag como, por exemplo, a tag "body", todos os outros elementos dentro dela irão herdar as suas características.
+		</p>
+		</div>
+	</body>
+</html>

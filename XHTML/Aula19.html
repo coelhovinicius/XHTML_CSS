@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>XHTML Aula 19</title>
+	</head>
+	<body style="background-color:#E0EEEE;">
+		<h1 align="center" style="font-family:arial; color:grey;">ACESSIBILIDADE DE FORMULÁRIOS</h1>
+		<p style="font-family:arial; color:grey;">
+		Nos formulários, podemos indicar com LABEL conteúdos que não têm um label implícito. Por exemplo, no formulário abaixo, podem-se verificar os campos nome e senha. Ambos não tem label. assim, utilizando a Tag LABEL, podemos atribuir rótulos aos campos. No nome, o rótulo do campo a ser preenchido pode ser atribuído. Na senha, a mesma coisa. Assim, organiza-se melhor as informações.<br />
+		Para fazer um formulário, utilizamos a Tag "form", que deverá conter toda a estrutura do formulário. Cada campo do formulário é um "controle" do formulário.<br />
+		Podemos utilizar Label de duas maneiras: Englobando todos os campos da linha do input type="text", ou englobando só o nome do campo, "Nome" ou "Senha".<br />
+		</p>
+		<form style="font-family:arial; color:blue" action="aula19.html" method="get">
+			Controle FIELDSET - Tem a função de estruturar os formulários. Agrupa um conjunto de controles do formulário que tenham finalidades relacionadas.<br />
+			Podemos mudar a sequência dos campos e, quando utilizamos a tecla TAB para passar de campo em campo, podemos atribuir a ordem dos campos.<br />
+			ACCESSKEY - Podemos atribuir teclas que permitem focar em áreas específicas do formulário. No Firefox, utiliza-se shift+alt+accesskey.<br />
+			TABINDEX - Possibilita atribuir a ordem do foco dos campos.<br />
+			READONLY - Possibilita acessar o campo, porém, não se pode alterá-lo, sendo apenas para leitura.<br />
+			DISABLED - Com esse atributo, podemos bloquear o campo para acesso e alteração, bem como as informações do campo não serão enviadas ao servidor designado no "action".<br />
+			HIDDEN - Controle oculto - Temos o "input type="hidden", que permite que dados sejam enviados sem que o usuário os acesse. É um controle oculto. Por exemplo, o número do formulário preenchido pelo usuário. Não é necessário apresentar esse dado ao usuário. Podemos atribuir um "value" chamando um programa que controla o número de acessos, número de inscrições, etc., que só poderá ser acessado pelo desenvolvedor.<br /><br />
+			<input type="hidden" id="chave" value="0123456789">
+			<fieldset>
+				<legend>Informações Pessoais</legend>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" tabindex="4" accesskey="N" value="Nome do Usuário" disabled="disabled" /><br />
+				<label for="senha">Senha:
+				<input type="password" id="senha" tabindex="2" value="1234567890" readonly="readonly" /><br />
+				</label>
+				Sexo - RADIO button:<br />
+				<input type="radio" name="sexo" value="M" tabindex="3" />Masculino<br />
+				<input type="radio" name="sexo" value="F" />Feminino<br />
+			</fieldset>
+			<fieldset>
+				<legend>Informações Profissionais</legend>
+				Conhecimentos - CHECKBOX:<br />
+				<input type="checkbox" name="conhecimentos" value="java" />JAVA<br />
+				<input type="checkbox" name="conhecimentos" value="html" />HTML<br />
+				<input type="checkbox" name="conhecimentos" value="css" />CSS<br />
+				<input type="checkbox" name="conhecimentos" value="xslt" />XSTL<br />
+				<br />
+				Incluir arquivo. Por exemplo, incluir Curriculo:<br />
+				<input type="file" id="curriculo" /><br />
+				<br />
+				Seleção - SELECT - Permite selecionar dados, por exemplo, País:<br />
+				<select id="pais">
+					<option value="BRA">Brasil</option>
+					<option value="HOL">Holanda</option>
+					<option value="EUA">Estados Unidos</option>
+					<option value="FRA">França</option>
+					<option value="ESP">Espanha</option>
+					<option value="ARG">Argentina</option>
+					</select><br />
+				<br />
+				Atribuem-se VALUES, que são os códigos para os campos selecionados.<br />
+				Também podemos criar grupos de SELECTs, utilizando o OPTGROUP, como abaixo:<br />
+				Editores ou Navegadores<br />
+				<select id="en">
+					<optgroup label="Editores">
+						<option>Notepad++</option>
+						<option>DreamWeaver</option>
+						<option>Eclipse</option>
+						<option>HTML-Kit</option>
+					</optgroup>
+					<optgroup label="Navegadores">
+						<option>Mozilla Firefox</option>
+						<option>Internet Explorer</option>
+						<option>Google Chrome</option>
+						<option>Opera</option>
+					</optgroup>
+				</select><br />
+				<br />
+				<label for="resumo">Elemento TEXTAREA - Uma área determinada em que podemos inserir dados a serem submetidos.</label><br />
+				<textarea cols="40" rows="10" id="resumo" tabindex="1">Texto qualquer que vai aparecer na TEXTAREA</textarea>
+			<br />
+			</fieldset>
+			Botão Enviar Dados - Submete os dados ao servidor/arquivo indicado em "action":
+			<input type="submit" value="Enviar"><br /><!--Submete os dados para o servidor indicado no "action"-->
+			Botão Limpar - Limpa os dados do formulário:
+			<input type="reset" value="Limpar"><br /><!--Limpa os dados do formulário-->
+			Botão tipo Button - Permite que seja atribuída qualquer instrução que, ao clicar o botão, será efetuada:
+			<input type="button" value="Validar Formulário"><br /><!--Permite que coloquemos qualquer instrução para o botão-->
+		<br />
+		</form>
+	</body>
+</html>

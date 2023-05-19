@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>XHTML Aula 22</title>
+	</head>
+	<body style="background-color:#E0EEEE;">
+		<h1 align="center" style="font-family:arial; color:grey;">!DOCTYPE</h1>
+		<p style="font-family:arial; color:grey;">
+		<h2>!DOCTYPE é um dos itens obrigatórios em uma página em XHTML</h2>
+		!DOCTYPE é o conjunto de definições para o tipo de documento a ser construído, no caso, XHTML. Informa as regras para validar os documentos (páginas).<br /><br />
+		Para estruturar uma página em XHTML, o !DOCTYPE é obrigatório. Abaixo está um exemplo do mínimo necessário para se estruturar uma página na Internet.<br />
+		<br />
+		<pre>
+		---AS TAGS FORAM SUBSTITUÍDAS POR ASTERÍSCOS---
+		
+		*!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"*
+
+		*html xmlns="http://www.w3.org/1999/xhtml"*
+
+		*head*
+		  *title*Title of document*/title*
+		*/head*
+
+		*body*
+		  some content
+		*/body*
+
+		*/html*
+		</pre>
+		<h3>DTD</h3>
+		DTD é um dos dados informados no !DOCTYPE. DTD significa "Document Type Definition". É um arquivo onde colocamos as regras de como construir bem o documento, terá as regras de validação da página.<br />
+		<h3>Há três tipos de DTDs:</h3>
+		<ul>
+			<li><span style="font-family:arial; font-weight:bold;">STRICT</span> - Para desenvolvedores profissionais, pois há padrões rígidos de controle de construção da página. Só permite definição de estilos com o uso do CSS. This DTD contains all HTML elements and attributes, but does NOT INCLUDE presentational or deprecated elements (like font). Framesets are not allowed.</li>
+			<li><span style="font-family:arial; font-weight:bold;">TRANSITIONAL</span> - Um pouco mais flexível. Permite definição de estilos sem CSS. This DTD contains all HTML elements and attributes, INCLUDING presentational and deprecated elements (like font). Framesets are not allowed.</li>
+			<li><span style="font-family:arial; font-weight:bold;">FRAMESET</span> - Não é considerado ser utilizado na construção das páginas, pois dificulta a acessibilidade, por exemplo. This DTD is equal to Transitional, but allows the use of frameset content.</li>
+		</ul>
+		<h3>STRICT - XHTML 1.0 - EXEMPLO:</h3>
+		<pre>
+		---AS TAGS FORAM SUBSTITUÍDAS POR ASTERÍSCOS---
+		
+		*!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"*
+		</pre>
+		
+		<h3>TRANSITIONAL - XHTML 1.0 - EXEMPLO:</h3>
+		<pre>
+		---AS TAGS FORAM SUBSTITUÍDAS POR ASTERÍSCOS---
+		
+		*!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"*
+		</pre>
+		
+		<h3>FRAMESET - XHTML 1.0 - EXEMPLO:</h3>
+		<pre>
+		---AS TAGS FORAM SUBSTITUÍDAS POR ASTERÍSCOS---
+		
+		*!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"*
+		</pre>
+		
+		
+		<br />
+		No link <a href="http://www.w3schools.com/html/html_xhtml.asp">http://www.w3schools.com/html/html_xhtml.asp</a>, há maiores informações.<br /><br />
+		</p>
+	</body>
+</html>

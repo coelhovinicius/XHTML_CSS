@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 04</title>
+			
+		<style type="text/css">
+			@import url("css/CSSEstilo.css") screen, projection;
+		</style>
+		
+	</head>
+	<body>
+		<h1>CSS - Seletores Simples</h1>
+		<p>
+			Como dito anteriormente, o seletor é um dos elementos básicos do CSS.<br />
+			No exemplo abaixo, vemos o seletor "p", que seleciona as entidades "p" para utilizarem o CSS codificado:
+			<pre>
+				p {
+					color:#006699;
+					font-family:"Comic Sans MS";
+				}
+			</pre>
+			Temos três tipos de seletores:
+			<ul>
+				<li>Simples - Constituído de um só elemento, podendo ser associado a um  ID ou a uma pseudo-classe</li>
+				<li>Compostos - </li>
+				<li>Pseudo-seletores - </li>
+			</ul>
+		</p>
+		<br />
+		<p>
+			<h2>Seletor SIMPLES</h2>
+		</p>
+		<br />
+		<p>
+			<h3>Seletor Simples UNIVERSAL</h3>
+			Seletor aplicado a todos os elementos do documento. É representado através do símbolo asterísco "*".<br />
+			<pre>
+			* {
+				margin:0; - remove a margem padrão dos browsers, em todos os elementos
+			}
+			</pre>
+		</p>
+		<p>
+			<h3>Seletor Simples ELEMENTO</h3>
+			Seletor aplicado ao elemento, como já estudado anteriormente. No caso abaixo, aplicamos ao elemento "p" - parágrafo.<br />
+			<pre>
+				p {
+					color:#006699;
+					font-family:"Comic Sans MS";
+				}
+			</pre>
+		</p>
+		<p>
+			<h3>Seletor Simples CLASSE</h3>
+			Com esse seletor, podemos aplicar definições pontuais ao nosso código. Por exemplo, abaixo temos o elemento "p" com uma classe que denominamos de "destaque", podendo ser qualquer outro nome desejado. Isso cria um indicador, que irá puxar especificamente as definições para aquele elemento "p" em questão. Qualquer outro elemento pode receber uma classe, para que possa ter uma definição CSS diferente dos demais elementos.<br />
+			<pre> 
+				STRING XHTML PARA IDENTIFICAR A CLASSE PARA O ELEMENTO QUE IRÁ LEVAR AS CONFIGURAÇÕES CSS:
+				
+				p class="destaque" - utilizam-se as Tags  para abrir e fechar: <>
+				
+				
+				STRING CSS PARA CONFIGURAR AS DEFINÇÕES DO TRECHO:
+				
+				.destaque {
+				color:#FFD700;
+				font-family:"arial";
+				}
+			</pre>
+		</p>
+		<br />
+		<p class="destaque">
+			Assim, esse texto está aparecendo diferente de todos os outros parágrafos da página.<br />
+			EXEMPLO
+		</p>
+		<br />
+		<p class="detalhe">
+			Outro exemplo de texto customizado diferentemente das demais da página.<br />
+		</p>
+		<br />
+		<p>
+			<div id="exemplo">
+				<h3>Seletor Simples ID</h3>
+				Por exemplo, quando utilizamos DIVs, também, podemos identificá-las com IDs, como já visto nas aulas de XHTML. Assim, podemos atribuir diversas definições CSS diferentes a esses IDs, como visto abaixo:<br />
+				<pre>
+					STRING XHTML PARA IDENTIFICAR O ID PARA A DIV QUE IRÁ LEVAR AS CONFIGURAÇÕES CSS:
+					
+					div id="exemplo" - utilizam-se as Tags  para abrir e fechar: <>
+					
+					
+					STRING CSS PARA CONFIGURAR AS DEFINÇÕES DO TRECHO:
+					
+					#exemplo
+					{
+					background-color:#7FFFD4;
+					}
+				</pre>
+			</div>
+		</p>
+		<p>
+			<h3>Seletor Simples ATRIBUTO</h3>
+			Seletor que "casa" com um determinado <em title="exemplo qualquer">atributo</em> de um de nossos elementos Por exemplo, <em title="trecho">quando há uma marcação no XHTML do tipo inline EM, que dá ênfase ao trecho indicado</em>, podemos atribuir definições CSS <em title="mais um exemplo qualquer">especificamente</em> para esses elementos também.<br />
+			<pre>
+				STRING XHTML PARA IDENTIFICAR O TÍTULO DA EM RELACIONADA:
+					
+				em title="trecho" - utilizam-se as Tags  para abrir e fechar: <>
+					
+				
+				STRING CSS PARA CONFIGURAR AS DEFINÇÕES DO TRECHO:
+					
+				em[title=trecho] {
+				color:#00008B;
+				background-color:#EEDD82;
+				}
+			</pre>
+			<br />
+			Ainda temos outro exemplo de utilização. Por exemplo, se quizermos identificar qualquer parte do texto que tenha título contendo a palavra "exemplo", desde que não seja separado por hífen, utilizamos a sintaxe abaixo:<br />
+			<pre>
+			
+				em[title~=exemplo] {
+				color:#00BFFF;
+				font-family:"arial";
+				}
+				
+			</pre>
+			<br />
+			Indicamos acima que os textos com <em title="outro-exemplo">hífen</em> não são considerados com a utilização daquela sintaxe. Portanto, para casos com hífen, temos a sintaxe abaixo:<br />
+			<pre>
+			
+				em[title|=outro] {
+				color:#CDCDC1;
+				font-family:"Lucida Console";
+				}
+				
+			</pre>
+		</p>
+	</body>
+</html>

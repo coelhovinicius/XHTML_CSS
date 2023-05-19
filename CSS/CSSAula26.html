@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Aula 26</title>
+		<!--<style type="text/css">
+			@import url("css/CSSEstiloAula26.css") screen, projection;
+		</style>-->
+		<link rel="stylesheet" type="text/css" href="css/CSSEstiloAula26.css" media="all" />
+	</head>
+	<body>
+		<div id="conteiner">
+			<h1>CSS Sprite</h1>
+			<p>
+				Sprite é uma técnica em CSS utilizada para maximizar a performance das páginas XHTML. Consiste na inclusão de imagens sem uma grande quantidade de requisições ao servidor.<br />
+				Abaixo, temos uma imagem inteira, dentro da qual há diversas imagens diferentes. Com o Sprite, podemos exibir, apenas, um único ícone dentre todos os que estão nessa imagem, por exemplo. Portanto, essa técnica nos possibilida que exibamos, apenas, "pedaços" de uma imagem maior. Assim, não é necessário que tenhamos um arquivo para cada imagem e, assim, diminuem-se as requisições ao servidor, aumentando a performance da página.
+			</p>
+			<img src="img/sprite.png" alt="icones para sprite" />
+			<p>
+				Abaixo há um exemplo de exibição de um dos ícones acima com Sprite:
+			</p>
+			<div class="email"></div>
+			<div class="recycler"></div>
+			<p>
+				Conseguimos esse efeito criando-se uma &ltdiv&gt e atribuindo uma imagem a ela com CSS. Abaixo, veja a sintaxe:
+			</p>
+			<pre>
+Para XHTML: &ltdiv class="email"&gt&lt/div&gt
+
+Para o CSS:
+.email{
+	background:url(../img/sprite.png) -307px -160px;
+	height:25px;
+	width:25px;
+}
+			</pre>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+	margin:0;
+}
+p{
+	color:#00FFFF;
+}
+
+h1{
+	text-align:center;
+}
+
+h2 {
+	font-family:"arial";
+	color:#551A8B
+}
+
+h3{
+	color:#7D26CD
+}
+
+.destaque {
+	color:#FFD700;
+	font-family:"arial";
+}
+
+.detalhe {
+	text-decoration:underline;
+	font-family:"verdana";
+	color:#8B3A3A;
+}
+#exemplo {
+	background-color:#7FFFD4;
+}
+
+em[title=trecho]{
+	color:#FF0000;
+	background-color:#90EE90;
+}
+em[title~=exemplo] {
+	color:#00BFFF;
+	font-family:"arial";
+}
+em[title|=outro] {
+	color:#CDCDC1;
+	font-family:"Lucida Console";
+}

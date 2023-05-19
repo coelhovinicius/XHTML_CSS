@@ -1,0 +1,39 @@
+/*a{
+	text-decoration:none;
+	color:#000000;
+	background-color:#DDDDDD;
+	border:1px solid #000000;
+	width:125px;
+	display:block;
+	padding:2px;
+}
+a:hover{
+	text-decoration:underline;
+	color:#DDDDDD;
+	background-color:#000000;
+}*/
+a[href^="http:"]{
+	background:url(../img/externo.png) no-repeat right top;
+	padding-right:15px;
+}
+a[href^="mailto:"]{
+	background:url(../img/email.gif) no-repeat right top;
+	padding-right:17px;
+}
+a[href$=".jpg"]{
+	background:url(../img/interno.gif) no-repeat right top;
+	padding-right:25px;
+}
+a img{
+	border:none;
+}
+
+h1{
+	border-top:1px dotted #000000;
+	border-bottom:1px dotted #000000;
+	background-color:#FFFF00;
+	border-left:10px solid #000000;
+	padding-left:50px;
+	background-image:url(../img/exemplo.png);
+	/*background-repeat:no-repeat;*/
+}

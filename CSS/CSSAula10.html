@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 10</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula10.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>ESTILIZAÇÃO DE FONTES</h1>
+		<div>
+			<p>
+				Para começar a aprender a estilizar as fontes, precisamos entendê-las primeiro.<br />
+				Existem fontes Seguras, que são as fontes que vêm instaladas na maioria dos sistemas operacionais, fontes Genéricas, que são utilizadas como última opção na atribuição de fonte ao elemento na folha de estilo CSS, e outros tipos de fontes, que podem ser quaisquer fontes existentes. Porém, pode ser que o sistema operacional não possua a fonte existente no código e, assim, aplique a fonte padrão.
+			</p>
+			<h2>Fontes Seguras</h2>
+			<p>
+				As fontes Seguras são as fontes mais usadas, por padrão, pela maioria, senão de todos os sistemas operacionais. São elas:
+			</p>
+			<ul>
+				<li style="font-family:arial;">Arial</li>
+				<li style="font-family:'arial black';">Arial Black - apesar de não funcionar, pelo menos, não no meu sistema operacional e meu browser	</li>
+				<li style="font-family:'comic sans ms';">Comic Sans MS</li>
+				<li style="font-family:'courier new';">Courier New</li>
+				<li style="font-family:impact;">Impact</li>
+				<li style="font-family:'times new roman';">Times New Roman</li>
+				<li style="font-family:'trebuchet ms';">Trebuchet MS</li>
+				<li style="font-family:verdana;">Verdana</li>
+			</ul>
+			<p>
+				Para a folha de estilo CSS, definimos a familia de fontes que iremos aplicar:
+			</p>
+			<pre>
+				p{
+					font-family:"lucida grande", "lucida sans", verdana, sans-serif;
+				}
+			</pre>
+			<p>
+				No exemplo acima, o browser irá utilizar a fonte informada na linha do código CSS. Como há diversas fontes informadas, ele irá verificar se ele possui as fontes no seu sistema operacional, sempre seguindo a ordem da primeira até a última. Caso ele não possua a primeira fonte, "lucida grande", disponível no sistema operacional, ele irá partir para a segunda fonte, "lucida sans" e, assim, sucessivamente. Por isso, é importante que a última fonte informada no código CSS seja a fonte mais genérica possível, uma que, com certeza, todos os sistemas operacionais tenham. Normalmente, trata-se da fonte "sans-serif".<br />
+				Nesse <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="blank">link</a>, verificamos as fontes seguras definidas pela W3 Schools.
+			</p>
+			<h2>Fontes Genéricas</h2>
+			<p>
+				O W3C define cinco Grupos de fontes Genéricas, destinadas à última opção, caso nenhuma das anteriores esteja disponível no sistema operacional residente:
+			</p>
+			<ul>
+				<li style="font-family:serif;">Serif</li>
+				<li style="font-family:sans-serif;">Sans-Serif</li>
+				<li style="font-family:cursive;">Cursive</li>
+				<li style="font-family:fantasy;">Fantasy</li>
+				<li style="font-family:monospace;">Monospace</li>
+			</ul>
+			<p>
+				Cada Grupo de fontes Genéricas possui diversos tipos de fontes, que pode ser verificado no <a href="https://www.w3.org/Style/Examples/007/fonts.en.html" target="blank">link da W3 Schools</a>.
+			</p>
+			<h2>Estilos de Fontes</h2>
+			<p>
+				Propriedade "font-style", que permite definir que as fontes sejam exibidas em:
+			</p>
+			<ul>
+				<li style="font-style:italic;">Itálico - "font-style:italic;"</li>
+				<li style="font-style:normal;">Normal - "font-style:normal;"</li>
+				<li style "font-style:oblique;">Oblíquo - "font-style:oblique;"</li>
+				<li style="font-style:inherit;">Herança - "font-style:inherit;"</li>
+			</ul>
+			<h2>Peso da Fonte</h2>
+			<p>
+				Propriedade "font-weight", define a tonalidade da fonte, baseada no parâmetro "peso". Podemos utilizar os valores:
+			</p>
+			<ul>
+				<li>Bold - deixa a letra em <span style="font-weight:bold;">Negrito - "font-weight:bold;"</span></li>
+				<li>Lighter - deixa a letra um pouco (quase nada) mais <span style="font-weight:lighter;">Fina - "font-weight:lighter;"</span></li>
+				<li>Valores que variam de <span style="font-weight:100;">100 - "font-weight:100;"</span> a <span style="font-weight:900;">900 - "font-weight:900;"</span></li>
+			</ul>
+			<h2>Propriedade Font Variant</h2>
+			<p>
+				Definida pela sintaxe "font-variant:small-caps", <span style="font-variant:small-caps">Transforma as letras minúsculas de um texto em letras maiúsculas, porém, um pouco menores que as letras maiúsculas normais do texto</span>.
+			</p>
+			<h2>Propriedade Font Size</h2>
+			<p>
+				Essa propriedade já foi muito aplicada nas aulas anteriores, onde <span style="font-size:30px;">podemos alterar o tamanho das letras</span>.
+			</p>
+			<h2>Exemplo</h2>
+			<p>
+				Abaixo, podemos verificar um exemplo de sintaxe com as propriedades de fonte que foram vistas nessa aula:
+			</p>
+			<pre>
+				p{
+					font-style:italic;
+					font-variant:small-caps;
+					font-weight:bold;
+					font-size:6px;
+					font-family:"lucida grande", "lucida sans", verdana, sans-serif;
+				}
+			</pre>
+			<h2>Simplificação das declarações de fontes</h2>
+			<p>
+				Como em todos os recursos CSS que utilizamos anteriormente, há uma maneira de simplificar a declaração dos valores, também, para as Fontes, conforme o exemplo abaixo:
+			</p>
+			<pre>
+				p{
+					font:italic small-caps bold 10px/150% verdana, sans-serif;
+				}
+			</pre>
+		</div>
+	</body>
+</html>

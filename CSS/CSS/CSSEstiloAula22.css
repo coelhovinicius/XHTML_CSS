@@ -1,0 +1,15 @@
+/**{
+	font-size:15px;
+}*/
+img{
+	width:50%;
+	border:1px solid black;
+}
+#container{
+	border:1px solid black;
+	width:90%;
+	/*width:500px ou 80% ou 30em;
+	min-width:300px;*/
+	
+	margin:0px auto;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 05</title>
+			
+		<style type="text/css">
+			@import url("css/CSSEstiloAula5.css") screen, projection;
+		</style>
+		
+	</head>
+	<body>
+		<h1>CSS - Seletores Compostos</h1>
+		<div>
+			<h3>Seletor Descendente</h3>
+			<em>O seletor Descendente</em> é aplicado a qualquer elemento que esteja dentro do elemento especificado, como visto abaixo:<br />
+			<p>
+				<em>EXEMPLO DE SELETOR DESCENDENTE</em>
+			</p>
+			<p>
+			SELETOR IRMÃO-ADJACENTE
+			</p>
+			<h4>OUTRO EXEMPLO</h4>
+			<pre>
+				EXEMPLO DE SELETOR DESCENDENTE
+				
+				div em {
+					color:red;
+				}
+			</pre>
+		</div>
+		<br />
+		<div>
+			<h3>Seletor Filho</h3>
+			O seletor Filho é aplicado a qualquer elemento que esteja dentro do elemento especificado, mesmo que esteja dentro de outro elemento, como visto abaixo:<br />
+			<p>
+				<em>EXEMPLO DE SELETOR FILHO</em>
+			</p>
+			<pre>
+				EXEMPLO DE SELETOR FILHO
+				
+				div > em {
+					text-decoration:underline;
+				}
+			</pre>
+		</div>
+		<br />
+		<div>
+			<h3>Seletor Irmão-Adjacente</h3>
+			O seletor Irmão-Adjacente a elementos próximos. Por exemplo, se temos duas Tags "p", podemos customizar, apenas, a segunda Tag "p". Se temos um "h4" após um "p", podemos customizá-lo, também. Abaixo, o exemplo da sintaxe:<br />
+			<p>
+				<em>EXEMPLO DE SELETOR IRMÃO-ADJACENTE</em>
+			</p>
+			<p>
+				EXEMPLO DE SELETOR IRMÃO-ADJACENTE
+			</p>
+			<pre>
+			
+				p + p {
+					color:blue;
+				}
+				
+			</pre>
+			<h4>OUTRO EXEMPLO</h4>
+			<pre>
+			
+				p + h4 {
+					color:grey;
+				}
+				
+			</pre>
+			
+			
+		</div>
+	</body>
+</html>

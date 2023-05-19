@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>XHTML Aula06</title>
+	</head>
+	
+	<body style="background-color:lightgrey;">
+	
+		<h1 style="text-align:center; color:orange;">
+		Aula 06 - Imagens - Elemento Inline
+		</h1>
+		
+		<h2 style="text-align:center; color:#FF0000;">
+		Adicionar e mexer com imagens.
+		</h2>
+		
+		<p style="text-align:justify; color:purple;">
+		A Tag para adicionar imagens é a "img", sendo um elemento Inline. Devemos usar, também, dois atributos obrigatórios nessa Tag "img": atributo "src", onde se indica o endereço da imagem e atributo "alt", indicando um texto alternativo. <!-- O que seria "texto alternativo"?--> <br />
+		Normalmente, as imagens captadas não são perfeitamente do tamanho desejado para a página. Para alterar as dimensões, usamos o "style". <br />
+		O atributo "width" nos ajuda a redimensionar a foto. Podemos atribuir valores em pixels (exemplo: style="width:500px;") ou em porcentagem (style="width:50%;"). A diferença é que, quando se redimensiona em pixels, o tamanho da foto permanece o mesmo independentemente do tamanho da janela que o usuário está defininido para o browser. Quando se atribui o dimensionamento em porcentagem, a imagem se dimensiona automaticamente à janela do browser. <br />
+		<br />
+		</p>
+
+		<p>
+		Temos que ter ciência que imagens "carregam" a página. Imagens JPG são mais pesadas que imagens GIF. Além do mais, as imagens GIF mantêm todas as características da imagem original, mesmo que muito mais compactadas. Quanto às JPG, perdem informações quando são convertidas a essa extensão. Porém, as GIF suportam poucas centenas de cores, enquanto as JPG, milhões. <br />
+		Há vários editores gratuítos de imagens, dentre eles: <br />
+		- GIMP - www.gimp.org <br />
+		- PICASA - picasa.google.com <br />
+		- IMAGEMAGICK - www.imagemagick.org <br />
+		</p>
+		
+		<p>
+		<img src="img/JesusAnjo.gif" style="width:50%;" alt="Jesus Anjo GIF" align="right" />
+		</p>
+		
+		<p>
+		Para alinharmos uma foto ao lado de algum texto,<br />
+		devemos atribuir um alinhamento a ela. <br />
+		Por exemplo, a imagem aparece ao lado pois eu <br />
+		atribuí a ela o seguinte: align="right" dentro da Tag da imagem.<br />
+		<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+		</p>
+		<p style="text-align:center;">
+		COM "STYLE" - PORCENTAGEM <br />
+		<img src="img/gato1.jpg" style="width:50%;" alt="Gatinho Lindo" />
+		<br />
+		<br />
+		COM "STYLE" - PIXELS <br />
+		<img src="img/gato1.jpg" style="width:500px;" alt="Gatinho Lindo" />
+		<br />
+		<br />
+		SEM "STYLE" <br />
+		<img src="img/JesusAnjo.jpg" alt="Jesus Anjo JPG" />
+		</p>
+	</body>
+</html>

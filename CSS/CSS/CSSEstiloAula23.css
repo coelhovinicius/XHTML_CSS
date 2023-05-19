@@ -1,0 +1,50 @@
+*{
+	margin:0 auto;
+}
+div{
+	border:1px solid black;
+}
+#container{
+	width:90%;
+	min-width:300px;
+	/*margin:0 auto;*/
+}
+#top{
+	width:90%;
+	text-align:center;
+	background-color:green;
+	font-family:arial;
+	font-size:20px;
+}
+#header{
+	height:80px;
+	background:yellow;
+	font-family:helvetica;
+	text-align:center;
+	font-size:30px;
+	
+}
+#left{
+	float:left;
+	width:40%;
+	background:blue;
+}
+#content{
+	float:right;
+	width:50%/*450px*/;
+	background:red;
+}
+#footer{
+	clear:both;
+	text-align:center;
+	background:grey;
+}
+span.destaque{
+	width:40%;
+	float:right;
+	border:1px solid black;
+	font-family:gerogia;
+	font-style:italic;
+	font-size:15px;
+	padding:5px;
+}

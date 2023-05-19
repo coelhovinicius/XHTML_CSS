@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 09</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula9.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>UNIDADES DE MEDIDAS</h1>
+		<div>
+			<p>
+				O CSS possui diversos tipos de medidas para trabalhar com a customização da página.
+			</p>
+			<h2>Medidas Absolutas</h2>
+			<p>
+				Medidas Absolutas são valores que não dependem de um valor de referência. Há cinco tipos de unidades de Medidas Absolutas:
+			</p>
+			<ul>
+				<li>Polegada - in - Exemplo: 5in</li>
+				<li>Centímetros - cm - Exemplo: 5cm</li>
+				<li>Milímetros - mm - Exemplo: 5mm</li>
+				<li>Pontos - pt - Exemplo: 5pt</li>
+				<li>Pics - pc - Exemplo: 5pc</li>
+			</ul>
+			<p>
+				As medidas absolutas só devem ser utilizadas quando conhecemos com detalhes as características físicas e as configurações do equipamento e do programa que rodarão o arquivo XHTML. Utilizando medidas absolutas em letras, por exemplo, elas ficarão do mesmo tamanho em telas grandes ou pequenas. Portanto, poderão parecer muito grandes em telas pequenas e muito pequenas em telas grandes, por exemplo.<br />
+				Praticamente, utiliza-se, apenas, a Medida Absoluta de Pontos (pt), pois é utilizada em mídias de impressão.
+			</p>
+			<h2>Medidas Relativas</h2>
+			<p>
+				Há três tipos de medidas relativas:
+			</p>
+			<ul>
+				<li>em - refere-se a "x" vezes o valor de uma fonte definida para o mesmo elemento. Exemplo: 5em</li>
+				<li>ex - é igual a altura da letra "x"</li>
+				<li>px - dimensões fixas - calculada em relação ao dispositivo no qual sendo rodado o XHTML</li>
+			</ul>
+			<h3>Medida relativa "em" - Exemplo:</h3>
+			<pre>
+				h1{
+					font-size:50px;
+				}
+				h2{
+					font-size:20px;
+				}	
+				h1,h2{
+					margin-left:1em; /*Aplica a medida relativa à fonte para a margem esquerda de "h1" e "h2"*/
+				}
+			</pre>
+			<p>
+				Podemos fazer uma relação entre as fontes da página inteira. Para isso, utilizamos o seletor universal "*", como no exemplo abaixo:
+			</p>
+			<pre>
+				*{
+					font-size:10px;
+				}
+				h1{
+					font-size:3em;
+				}
+				h2{
+					font-size:2em;
+				}
+			</pre>
+			<h2>Medidas Percentuais</h2>
+			<p>
+				Podemos utilizar Medidas Percentuais para aplicarmos aos elementos:
+			</p>
+			<pre>
+				p{
+					font-size:400%
+				}
+			</pre>
+		</div>
+	</body>
+</html>

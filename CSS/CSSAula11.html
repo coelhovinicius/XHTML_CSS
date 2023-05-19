@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 11</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula11.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>Estilização de Textos - Espaçamento e Alinhamento</h1>
+		<div>
+			<h2>Letter Spacing</h2>
+			<p>
+				A propriedade Letter Spacing - "letter-spacing:" - permite a customização do espaçamento entre as letras do texto de um elemento. Podemos atribuir qualquer valor, inclusive números fracionados ou negativos.<br />
+				Exemplo de sintaxe:
+			</p>
+			<pre>
+				p{
+					letter-spacing:-5.1px;
+				}
+			</pre>
+			<h2>Word Spacing</h2>
+			<p>
+				A propriedade Word Spacing - "word-spacing:" - permite a customização do espaçamento entre as palavras do texto de um elemento.<br />
+				Exemplo de sintaxe:
+			</p>
+			<pre>
+				p{
+					word-spacing:5px;
+				}
+			</pre>
+			<h2>Line Height</h2>
+			<p>
+				A propriedade Line Spacing - "line-height:" - permite a customização do espaçamento entre as linhas do texto de um elemento. Podemos aplicar quaisquer medidas para indicar o tamanho do espaçamento, inclusive, podemos utilizar Medidas Relativas, onde atribuímos um valor em número ou porcentagem. a base de cálculo será o tamanho da fonte do elemento ao qual está sendo aplicado o código CSS. Não aceita valores negativos.<br />
+				Exemplos de sintaxe:
+			</p>
+			<pre>
+				p{
+					line-height:5px;
+				}
+				h1{
+					line-height:3; - espaçamento entre linhas de três vezes o tamanho da fonte
+				}
+				h2{
+					line-height:200%; - espaçamento entre linhas de 200% o tamanho da fonte
+				}
+			</pre>
+			<h2>Vertical Align</h2>
+			<p>
+				Controla o posicionamento vertical dos boxes inline.<br />
+				Por exemplo, quando temos um box span em um texto, podemos atribuir <span>customizações a esse trecho</span>.<br />
+				Temos quatro tipos de efeitos para o Vertical Align:
+			</p>
+			<ul>
+				<li>super - deixa o trecho ligeiramente acima do resto do texto</li>
+				<li>sub - deixa o trecho ligeiramente abaixo do resto do texto</li>
+				<li>text-top - move o texto ao redor do trecho ligeiramente para cima</li>
+				<li>text-bottom - move o texto ao redor do trecho ligeiramente para baixo</li>
+			</ul>
+			<p>
+				Exemplo de sintaxe:
+			</p>
+			<pre>
+				span{
+					vertical-align:super;
+				}
+			</pre>
+			<h2>Text Align</h2>
+			<p>
+				Propriedade que possibilita a customização do alinhamento do texto. Podem ser:
+			</p>
+			<ul>
+				<li>text-align:left; - alinha à esquerda</li>
+				<li>text-align:right; - alinha à direita</li>
+				<li>text-align:center; - centraliza</li>
+				<li>text-align:justify; - justifica o texto</li>
+			</ul>
+			<h2>Text Indent</h2>
+			<p>
+				Atribui a Indentação (recuo) apenas à primeira linha do texto do elemento a ser customizado. Podemos usar valores negativos, também.
+			</p>
+			<pre>
+				text-indent:50px;
+			</pre>
+		</div>
+	</body>
+</html>

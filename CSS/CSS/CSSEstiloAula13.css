@@ -1,0 +1,13 @@
+body{
+	background-image:url("../img/exemplo.png");
+	/*background-repeat:repeat-x;*/
+}
+div{
+	/*width:320px;*/
+	height:220px;
+	border:10px solid #00FA9A;
+	
+
+					background:#00BFFF url("../img/exemplo.png") no-repeat fixed 30% 30%;
+	
+}

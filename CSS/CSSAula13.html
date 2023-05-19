@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 13</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula13.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>BACKGROUND</h1>
+		<div>
+			<p>
+				O Background é uma propriedade que permite adicionar efeitos ao Box Model de qualquer elemento da página XHTML. Essa propriedade não é herdada.<br />
+				O valor padrão de Background é transparente. Caso não seja aplicado efeito de Background a um elemento, essa propriedade irá assumir o valor do elemento pai, porém, não por herança e, sim, pelo fato do valor padrão ser transparente. Então, o que houver no conteúdo do Background do elemento pai será mostrado, também, no elemento filho.<br />
+				Há cinco tipos para o Background:
+			</p>
+			<ul>
+				<li>Color - background-color:#00BFFF; - altera a cor de fundo</li>
+				<li>Image - background-image:url("../img/exemplo.png") - atribui uma imagem ao fundo</li>
+				<li>Repeat - background-repeat:no-repeat; (ou "repeat-x" ou "repeat-y") - indica se a imagem será repetida. Por padrão, a imagem é repetida, mesmo sem colocar "repeat"</li>
+				<li>Attachment - background-attachment:fixed; (ou scroll) - indica o alinhamento da imagem do elemento em relação às demais imagens da página</li>
+				<li>Position - background-position:top right; (e outros diversos exemplos) - define um posicionamento preciso para a imagem dentro do elemento</li>
+			</ul>
+			<h2>Background Color</h2>
+			<p>
+				Como já visto em XHTML, essa propriedade altera a cor do fundo do elemento a ser customizado. Podemos atribuir uma cor qualquer, ou podemos atribuir a cor padrão da janela ativa, utilizando o ActiveBorder:
+			</p>
+			<pre>
+				p{
+					background-color:ActiveBorder;
+				}
+			</pre>
+			<h2>Background Image</h2>
+			<p>
+				Podemos adicionar uma imagem como plano de fundo utilizando a propriedade background-image. Utilizamos a seguinte sintaxe "background-image:url();".
+			</p>
+			<pre>
+				p{
+					background-image:url("../img/exemplo.png");
+				}
+			</pre>
+			<h2>Background Repeat</h2>
+			<p>
+				Informa se queremos que a imagem se repita. Por padrão, ela será repetida dentro do Box Model ao qual estamos aplicando a imagem. Temos:
+			</p>
+			<ul>
+				<li>background-repeat:no-repeat; - informa que não queremos que a imagem seja repetida no elemento</li>
+				<li>background-repeat:repeat-y; - repete a imagem apenas na vertical - eixo y</li>
+				<li>background-repeat:repeat-x; - repete a imagem apenas na horizontal - eixo x</li>
+			</ul>
+			<h2>Attachment</h2>
+			<p>
+				Utilizado para "alinhar" as imagens, por exemplo. Pode ser "fixed", que alinha ao fundo de outros elementos da página, ou "scroll", que alinha dentro do próprio elemento.
+			</p>
+			<pre>
+				p{
+					background-attachment:fixed;
+				}
+			</pre>
+			<h2>Background Position</h2>
+			<p>
+				Define a posição da imagem no elemento.
+			</p>
+			<h3>Por Definições Diretas</h3>
+			<ul>
+				<li>background-position:top left; - posicionamento padrão</li>
+				<li>background-position:top;</li>
+				<li>background-position:top right;</li>
+				<li>background-position:center left;</li>
+				<li>background-position:center;</li>
+				<li>background-position:center right;</li>
+				<li>background-position:bottom left;</li>
+				<li>background-position:bottom;</li>
+				<li>background-position:bottom rigth;</li>
+			</ul>
+			<h3>Por Valores Fixos</h3>
+			<ul>
+				<li>Pixels: background-position:20px 90px; - Distanciamento de 20px para o eixo "x" e 90px para o eixo "y"</li>
+				<li>Porcentagem: background-position:50% 50%; - distancia de 50% do valor</li>				
+			</ul>
+			<p>
+				Podemos utilizar quaisquer unidades de medida, bem como valores negativos.
+			</p>
+			<h1>SIMPLIFICAÇÃO DO CÓDIGO PARA BACKGROUND</h1>
+			<p>
+				Podemos simplificar a declaração do Background utilizando a seguinte sintaxe:
+			</p>
+			<pre>
+				div{
+					background:#00BFFF url("../img/exemplo.png") no-repeat fixed 30% 30%;
+				}
+			</pre>
+		</div>
+	</body>
+</html>

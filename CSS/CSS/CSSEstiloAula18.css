@@ -1,0 +1,10 @@
+h1, h2, h3, p, pre{
+	border:1px solid black;
+}
+span{
+	border:1px solid black;
+	
+	position:relative;
+	left:6px;
+	top:6px;
+}

@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>XHTML Aula 17</title>
+	</head>
+	<body style="background-color:#E0EEEE;">
+		<h1 style="text-align:center; font-family:arial; color:yellow;">TABELAS - SPAN, TH, HEAD, FOOT</h1>
+		<p>
+		Podemos mesclar células das tabelas utilizando o COLSPAN, para Colunas, e o ROWSPAN, para linhas.<br />
+		<pre>
+		.table border border="1" cellpadding="4" (indica o espaço entre o conteúdo e a borda da célula) cellspacing="0" (indica o espaço entre as células).
+			.tr..td.TREINAMENTO./td..td.INSTRUTOR./td..td rowspan="5".EXPANSÃO./td../tr.
+			.tr..td.Scrum./td..td.Aman./td../tr.
+			.tr..td.Lumis./td..td.Josadache./td../tr.
+			.tr..td.HTML./td..td.Esaú./td../tr.
+			.tr..td colspan="2".CÉLULA MESCLADA EM LINHA./td../tr.
+		./table.
+		</pre>
+		</p>
+		<table border="1" cellpadding="4" cellspacing="0">
+			<tr><td>TREINAMENTO</td><td>INSTRUTOR</td><td rowspan="5">EXPANSÃO</td></tr>
+			<tr><td>Scrum</td><td>Aman</td></tr>
+			<tr><td>Lumis</td><td>Josadache</td></tr>
+			<tr><td>HTML</td><td>Esaú</td></tr>
+			<tr><td align="center" style="color:blue; font-family:arial;" colspan="2">CÉLULA MESCLADA</td></tr>
+		</table>
+		<p>
+		Outro exemplo abaixo:
+		</p>
+		<table border="1" cellpadding="4" cellspacing="0">
+			<tr style="background-color:grey"><td>UNIDADE</td><td>DIA</td><td>TREINAMENTO</td><td>INSTRUTOR</td></tr>
+			<tr><td rowspan="2">Brasília</td><td>2</td><td>Scrum</td><td rowspan="2">Aman</td></tr>
+			<tr><td>12</td><td>JAVA</td></tr>
+			<tr><td>São Paulo</td><td>10</td><td>Lumis</td><td>Josadache</td></tr>
+			<tr><td>Rio de Janeiro</td><td>18</td><td>HTML</td><td>Esaú</td></tr>
+		</table>
+		
+		
+		
+		<p>
+		Ainda temos atributos que podemos utilizar dentro da TD. Dentro da Tag TD, podemos utilizar o atributo align="right" (left, center, justify).<br />
+		Podemos formatar vários estilos, como cor do fundo, cor da fonte, etc..
+		</p>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr><td style="background-color:grey;">TREINAMENTO</td><td style="background-color:blue;">INSTRUTOR</td></tr>
+			<tr><td align="right" style="background-color:yellow;">Scrum</td><td align="right" style="background-color:green;">Aman</td></tr>
+			<tr><td align="left" style="background-color:purple;">Lumis</td><td align="left" style="background-color:red;">Josadache</td></tr>
+			<tr><td align="center" style="background-color:#CAE1FF;">HTML</td><td align="center" style="background-color:lightblue;">Esaú</td></tr>
+		</table>
+	</body>
+</html>

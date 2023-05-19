@@ -1,0 +1,14 @@
+p:first-line {
+	color:#0000FF;
+}
+p:first-letter{
+	font-size:40px;
+	color:lightgreen;
+	font-family:arial;
+}
+p:before{
+	content:"Qualquer Conteúdo, podendo ser texto, imagens, etc - ";
+}
+p:after{
+	content:" - Qualquer Conteúdo, podendo ser texto, imagens, etc - FIM";
+}

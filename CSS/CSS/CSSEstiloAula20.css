@@ -1,0 +1,15 @@
+h2{
+	border:1px solid black;
+}
+div{
+	border:1px solid red;
+	position:relative;
+	height:1000px;
+}
+#dois{
+	position:fixed;
+	/*position:absolute;*/
+	left:50px;
+	top:50px;
+	background-color:#551A8B;
+}

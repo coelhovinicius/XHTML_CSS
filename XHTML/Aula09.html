@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>XHTML Aula09</title>
+	</head>
+	
+	<body style="background-color:lightgrey;">
+	
+		<h1 style="text-align:center; color:orange;">
+		Listas - Aula 09 - Listas - Elemento em Bloco
+		</h1>
+		
+		<h2 style="text-align:center; color:#FF0000;">
+		Grupo de Elementoslementos Relacionados
+		</h2>
+		
+		<p style="text-align:justify; color:purple; font-family:arial;">
+		A lista pode ser de quatro tipos: <br />
+		<br />
+		- Não Ordenadas - Tag "ul" - Unordered List; <br />
+		- Ordenadas; Tag "ol" - Ordered List; <br />
+		- De Definições; <br />
+		- Mistas. <br />
+		<br />
+		Ao início e final de cada um dos itens da lista, coloca-se a Tag "li", abrindo e fechando. Nesse caso, pode-se excluir a Tag "br" do final. <br />
+		UL para indicar que há a lista Não Ordenada. <br />
+		LI para indicar cada item da lista. <br />
+		</p>
+		<p>
+		Lista Não Ordenada: <br />
+		UL para indicar que há a lista Não Ordenada. <br />
+		LI para indicar cada item da lista. <br />
+		<ul>
+		<li>GIMP - www.gimp.org </li>
+		<li>PICASA - picasa.google.com </li>
+		<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ul>
+		</p>
+		<p>
+		Lista Ordenada: <br />
+		OL para indicar que há a lista Ordenada. <br />
+		LI para indicar cada item da lista. <br />
+		<ol>
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		</p>		
+		<p>
+		Lista de Definição: <br />
+		DL para indicar que há a lista Não Ordenada. <br />
+		DT para indicar o termo a ser definido na lista. <br />
+		DD para indicar as definições do termo.
+		<dl>
+			<dt>Tecnologia - Substantivo Feminino</dt>
+				<dd>Teoria geral e/ou estudo sistemático sobre técnicas, processos, métodos, meios e instrumentos de um ou mais ofícios ou domínios da atividade humana (p.ex., indústria, ciência etc.)</dd>
+				<dd><i>p.met.</i> técnica ou conjunto de técnicas de um domínio particular</dd>
+			<dt>Internet - Substantivo Feminino</dt>
+				<dd><i>inf tel</i> Rede de computadores dispersos por todo o planeta que trocam dados e mensagens utilizando um protocolo comum, unindo usuários particulares, entidades de pesquisa, órgãos culturais, institutos militares, bibliotecas e empresas de toda envergadura. Inicial por vezes maiúscula</dd>
+			<dt>Software - Substantivo Masculino</dt>
+				<dd>Conjunto de componentes lógicos de um computador ou sistema de processamento de dados; programa, rotina ou conjunto de instruções que controlam o funcionamento de um computador; suporte lógico</dd>
+				<dd><i>p.met.</i> Todo programa armazenado em discos ou circuitos integrados de computador, esp. destinado a uso com equipamento audiovisual</dd>
+		</dl>
+		</p>
+		<br />
+		<p>
+		No HTML antigo, havia a possibilidade de se alterar algumas das características das listas apresentadas acima. Porém, no novo XHTML, está em desuso. A título de exemplo, seguem algumas maneiras de se alterarem as listas, no HTML antigo (substituído pela CSS): <br />
+		<br />
+		<p>
+		Há algumas maneiras de alterar as listas. Dentro da Tag das listas (ol, ul), colocamos as atribuições (exemplos): <br />
+		- start="6" - inicia a lista com o número 6; <br />
+		- type="1" - classifica à partir do número 1, em ordem crescente: 1 - 2 - 3 - 4...; <br />
+		- type="a" - classifica à partir da letra "a", em ordem alfabética, em minúsculas: a - b - c - d...; <br />
+		- type="A" - classifica à partir da letra "A", em ordem alfabética, em maiúsculas: A - B - C - D...; <br />
+		- type="i" - classifica à partir do número romano "i", em ordem, em minúsculas: i - ii - iii - iv...; <br />
+		- type="I" - classifica à partir do número romano "I", em ordem, em maiúsculas: I - II - III - IV...; <br />
+		<br />
+		</p>
+		<p>
+		Vejamos alguns exemplos abaixo:
+		<ol start="7">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		<ol type="1">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		<ol type="a">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		<ol type="A">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		<ol type="i">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		<ol type="I">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ol>
+		</p>
+		<p>
+		Para a Lista Não Organizada, ainda podemos modificar o estilo da bolinha que aparece na classificação padrão:<br />
+		- type="circle"; <br />
+		- type="square"; <br />
+		- Entre outros; <br />
+		Isso pode ser feito em CSS. <br />
+		</p>
+		<p>
+		Vejamos os exemplos abaixo:		
+		<ul type="circle">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ul>
+		<ul type="square">
+			<li>GIMP - www.gimp.org </li>
+			<li>PICASA - picasa.google.com </li>	
+			<li>IMAGEMAGICK - www.imagemagick.org </li>
+		</ul>
+		</p>
+		<p>
+		Os exemplos acima são à título de curiosidade, pois todos esses recursos são, atualmente, performizados pela CSS.<br />
+		</p>
+		<p>
+		Listas Mistas - Podemos criar listas não ordenadas dentro de listas ordenadas: <br />
+		<ol>
+			<li>Spider
+				<ul>
+					<li>Ferrari 360 Spider</li>
+					<li>BMW Z4</li>
+				</ul>
+			</li>
+			<li>Berlinetta
+				<ul>
+					<li>Ferrari Dino</li>
+					<li>Lamborguini Miura</li>
+				</ul>
+			</li>
+			<li>Cabriolet
+				<ul>
+					<li>Peugeot 307</li>
+					<li>BMW Serie</li>
+					<li>Renault Megane</li>
+				</ul>
+			</li>
+			
+		<br />
+		</p>
+		
+	</body>
+</html>

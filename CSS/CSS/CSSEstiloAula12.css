@@ -1,0 +1,16 @@
+*{
+	font-family:arial;
+}
+p{
+	text-decoration:underline line-through;
+	text-transform:uppercase;
+}
+span{
+	text-decoration:overline;
+}
+ul{
+	text-transform:lowercase;
+}
+h1{
+	text-transform:capitalize;
+}

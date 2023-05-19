@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSS Aula 16</title>
+		<style type="text/css">
+			@import url("css/CSSEstiloAula16.css") screen, projection;
+		</style>
+	</head>
+	<body>
+		<h1>ESTILIZAÇÃO DE LISTAS</h1>
+		<div>
+			<p>
+				As listas são muito utilizadas para a construção de menus nas páginas XHTML. A sintaxe correta para a criação de menus, sejam verticais, horizontais ou de subníveis, é com a adoção da estrutura de listas. É muito importante saber manusear as listas de uma página.<br /><br />
+				Veja abaixo um exemplo de lista:
+			</p>
+			<ul>
+				<li><a href="http://www.google.com" target="blank">GOOGLE</a></li>
+				<li><a href="http://www.yahoo.com" target="blank">YAHOO</a></li>
+				<li><a href="http://www.facebook.com" target="blank">FACEBOOK</a></li>
+				<li><a href="http://www.caixa.gov.br" target="blank">CEF</a></li>
+			</ul>
+			<p>
+				Podemos alterar o ícone padrão das listas, que é uma bolinha preta (disc). Há diversos tipos de customização, como visto nos exemplos abaixo:
+			</p>
+			<ul id="icones">
+				<li>list-style-type:none;</li>
+				<li>list-style-type:circle;</li>
+				<li>list-style-type:square;</li>
+				<li>list-style-type:disc;</li>
+				<li>list-style-type:lower-roman</li>
+				<li>list-style-type:upper-roman</li>
+				<li>list-style-type:georgian;</li>
+				<li>list-style-type:armenian;</li>
+				<li>list-style-type:lower-latin; ou list-style-type:lower-alpha;</li>
+				<li>list-style-type:upper-latin; ou list-style-type:upper-alpha;</li>
+				<li>list-style-type:lower-greek;</li>
+			</ul>
+			<pre>
+ul{
+	list-style-type:circle;
+}
+
+OU
+
+ul{
+	list-style-type:square;
+}
+
+OU
+
+ul{
+	list-style-type:disc; - padrão
+}
+			</pre>
+			<p>
+				Ainda, podemos inserir imagens ao invés dos itens vistos acima. Utilizamos a seguinte sitaxe:
+			</p>
+			<pre>
+ul{
+	list-style-image:url(img/lista.png)
+}
+			</pre>
+			<p>
+				Há os recursos "list-style-position:inside;" ou "list-style-position:outside (padrão)"
+			</p>
+			<pre>
+ul{
+	list-style-position:inside; /*ou outside*/
+}			
+			</pre>
+			<h2>Simplificação</h2>
+			<p>
+				A simplificação dos códigos acima podem ser feitas com a seguinte sintaxe, por exemplo:
+			</p>
+			<pre>
+ul{
+	list-style:none inside url(../img/lista.png);
+}	
+			</pre>
+		</div>
+	</body>
+</html>
